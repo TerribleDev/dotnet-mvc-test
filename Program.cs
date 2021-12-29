@@ -10,4 +10,3 @@ app.UseHttpsRedirection();
 app.MapGet("/", () => "Hello World!");
 var port = Environment.GetEnvironmentVariable("PORT") ?? "3100";
 app.Run("http://*:" + port);
-app.Run();
